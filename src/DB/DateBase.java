@@ -27,19 +27,21 @@ public class DateBase <T extends MotherOfPlants>{
                 myPlants.remove(myPlant);
             } else { System.out.print("Nie odnaleziono rośliny o podanym identyfikatorze!\n");}
         }
-        ConsoleHelper.MultipleChoice();
     }
     //wyświetlanie wszystkich obiektów zapamiętanych ze wszystkimi ich polami
     public void printAllPlants(){
         for (T myPlant:myPlants) {
             System.out.print(myPlant.toString()+"\n");
         }
-        ConsoleHelper.MultipleChoice();
     }
     //Wyświetlanie obiektów danego podtypu
-    public void printPlantsOfType(){
+    public void printPlantsOfType(String className){
         //instance - takie coś zastosować należy
-        ConsoleHelper.MultipleChoice();
+        for (T myPlant:myPlants) {
+            if(myPlant.getClass().getSimpleName() == className) {
+                System.out.print(myPlant.toString()+"\n");
+            }
+        }
     }
     //Wyświetlanie obiektów, których nazwa zawiera podany ciąg znaków
     public void printPlantContaining(String sequence){
@@ -48,6 +50,5 @@ public class DateBase <T extends MotherOfPlants>{
                 System.out.print(myPlant.toString()+"\n");
             } else { System.out.print("Nie odnaleziono rośliny zawierającej podany ciąg znaków!"); }
         }
-        ConsoleHelper.MultipleChoice();
     }
 }

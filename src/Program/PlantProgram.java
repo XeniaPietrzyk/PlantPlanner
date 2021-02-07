@@ -35,6 +35,7 @@ public class PlantProgram {
         dateBase.addToBase(por);
 
         dateBase.printAllPlants();
+        dateBase.printPlantsOfType(EatBulbPlant.class.getSimpleName());
 
         ConsoleHelper.MultipleChoice();
 
