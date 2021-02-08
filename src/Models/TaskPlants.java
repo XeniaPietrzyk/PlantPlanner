@@ -30,6 +30,7 @@ public class TaskPlants extends MotherOfPlants {
     }
 
     //metody:
+
     //dodanie nowego szkodnika zwalczanego/odstraszanego przez roślinę
     public void addInsect(String Insect){
         this.antiInsects.add(Insect);
@@ -39,11 +40,7 @@ public class TaskPlants extends MotherOfPlants {
         this.airPurification.add(airPurification);
     }
 
-    @Override
-    public String findMatch() {
-        return null;
-    }
-
     //wyświetlenie pól klasy
-    public String toString(){return getName()+ " " + getInsolationType() + " " + getSoilType() + " " + getSoilMoisture() + " " + getSoilPH() + " " + getAntiInsects() + " " + getAirPurification();}
+    public String printString(){return "nazwa: " + getName()+ ", nasłonecznienie: " + getInsolationType() + ", gleba: " + getSoilType() + ", wilgotność gleby: " + getSoilMoisture() + ", ph gleby: " + getSoilPH() + ", zwalcza: " + getAntiInsects() + ", neutralizuje:" + getAirPurification() + "\n";}
+
 }

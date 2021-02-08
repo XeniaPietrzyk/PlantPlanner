@@ -105,10 +105,10 @@ public class SwitchPropertiesType {
                     option = DecorativeElement.flowers;
                     break;
                 case "2":
-                    option = DecorativeElement.flowersAndLeafs;
+                    option = DecorativeElement.leafs;
                     break;
                 case "3":
-                    option = DecorativeElement.leafs;
+                    option = DecorativeElement.flowersAndLeafs;
                     break;
                 case "4":
                     break;
@@ -143,6 +143,9 @@ public class SwitchPropertiesType {
                     option = Family.daisy;
                     break;
                 case "5":
+                    option = Family.carrot;
+                    break;
+                case "6":
                     break;
             }
         }while(choice == null);

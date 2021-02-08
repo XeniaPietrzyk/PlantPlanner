@@ -46,9 +46,7 @@ public abstract class MotherOfPlants {
         MotherOfPlants.nextId++;
     }
 
-    //metody:
-    //znajdź roślinę, którą można posadzić razem
-    public abstract String findMatch();
     //wyświetlenie pól klasy
-    public String toString(){return getName()+ " " + getInsolationType() + " " + getSoilType() + " " + getSoilMoisture() + " " + getSoilPH();}
+    public abstract String printString();
+    public String toString(){ return "nazwa: " + getName()+ ", nasłonecznienie: " + getInsolationType() + ", gleba: " + getSoilType() + ", wilgotność gleby: " + getSoilMoisture() + ", ph gleby: " + getSoilPH();}
 }

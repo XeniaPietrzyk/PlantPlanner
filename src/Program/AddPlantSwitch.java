@@ -80,7 +80,6 @@ public class AddPlantSwitch {
                     System.out.println("Podaj kategorię (rodzinę) rośliny:");
                     family = switchPropertiesType.familySwitch();
                     plant = new EatBulbPlant(name, insolation, soilType, soilMoisture, soilPH, family, bulbDepth);
-                    System.out.println("Gratulacje. Twoja roślina została dodana do bazy danych.");
                     return plant;
                 case "4":
                     System.out.println("Podaj nazwę rośliny:");
@@ -93,6 +92,7 @@ public class AddPlantSwitch {
                     soilMoisture = switchPropertiesType.soilMoistureSwitch();
                     System.out.println("Podaj pH gleby, które lubi roślina:");
                     soilPH = Integer.parseInt(scanner.nextLine());
+                    System.out.println("Podaj zawartość flawonoidów:");
                     int flavanoidsContaining = Integer.parseInt(scanner.nextLine());
                     System.out.println("Podaj kategorię (rodzinę) rośliny:");
                     family = switchPropertiesType.familySwitch();
@@ -109,6 +109,7 @@ public class AddPlantSwitch {
                     soilMoisture = switchPropertiesType.soilMoistureSwitch();
                     System.out.println("Podaj pH gleby, które lubi roślina:");
                     soilPH = Integer.parseInt(scanner.nextLine());
+                    System.out.println("Podaj zawartość witamin:");
                     int vitaminPerGram = Integer.parseInt(scanner.nextLine());
                     System.out.println("Podaj kategorię (rodzinę) rośliny:");
                     family = switchPropertiesType.familySwitch();
