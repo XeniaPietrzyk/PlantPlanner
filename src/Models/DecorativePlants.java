@@ -21,11 +21,6 @@ public class DecorativePlants extends MotherOfPlants {
     }
 
     //metody:
+    public String printString(){return "nazwa: " + getName()+ ", nasłonecznienie: " + getInsolationType() + ", gleba: " + getSoilType() + ", wilgotność gleby: " + getSoilMoisture() + ", ph gleby: " + getSoilPH() + ", element dekoracyjny: " + getDecorativeElement() + "\n";}
 
-    @Override
-    public String findMatch() {
-        return null;
-    }
-
-    public String toString(){return getName()+ " " + getInsolationType() + " " + getSoilType() + " " + getSoilMoisture() + " " + getSoilPH() + " " + getDecorativeElement();}
 }

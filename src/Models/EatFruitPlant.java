@@ -1,12 +1,13 @@
 package Models;
 
 import Abstract.FoodPlants;
+import Abstract.ICharacteristic;
 import Enumerators.InsolationType;
 import Enumerators.SoilMoisture;
 import Enumerators.SoilType;
 import Enumerators.Family;
 
-public class EatFruitPlant extends FoodPlants {
+public class EatFruitPlant extends FoodPlants implements ICharacteristic {
     private int flavanoidsContaining;
 
     public int getFlavanoidsContaining() { return flavanoidsContaining;}
@@ -17,6 +18,15 @@ public class EatFruitPlant extends FoodPlants {
         setFlavanoidsContaining(flavanoidsContaining);}
 
     //metody:
-    public String toString(){return getName()+ " " + getInsolationType() + " " + getSoilType() + " " + getSoilMoisture() + " " + getSoilPH() + " " + getFlavanoidsContaining();}
+
+    @Override
+    public void printCharacteristic() {
+        getFlavanoidsContaining();
     }
+
+    @Override
+    public String printString(){
+        return super.printString() + ", zawartość flawonoidów: " + getFlavanoidsContaining() + "\n";
+    }
+}
 

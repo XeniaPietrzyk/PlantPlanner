@@ -5,7 +5,7 @@ import Enumerators.InsolationType;
 import Enumerators.SoilMoisture;
 import Enumerators.SoilType;
 
-public abstract class FoodPlants extends MotherOfPlants implements FindingFamily {
+public abstract class FoodPlants extends MotherOfPlants {
     private Family family;
 
     public Family getFamily() {return family;}
@@ -20,8 +20,6 @@ public abstract class FoodPlants extends MotherOfPlants implements FindingFamily
     }
 
     //metody:
-    public String findMatch(){
-        return null;}
-    //wyświetlenie pól klasy
-    public String toString(){return getName()+ " " + getInsolationType() + " " + getSoilType() + " " + getSoilMoisture() + " " + getSoilPH() + " " + getFamily();}
+    @Override
+    public String printString(){return "nazwa: " + getName()+ ", nasłonecznienie: " + getInsolationType() + ", gleba: " + getSoilType() + ", wilgotność gleby: " + getSoilMoisture() + ", ph gleby: " + getSoilPH() + ", rodzina: " + getFamily();}
 }

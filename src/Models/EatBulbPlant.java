@@ -1,12 +1,13 @@
 package Models;
 
 import Abstract.FoodPlants;
+import Abstract.ICharacteristic;
 import Enumerators.InsolationType;
 import Enumerators.SoilMoisture;
 import Enumerators.SoilType;
 import Enumerators.Family;
 
-public class EatBulbPlant extends FoodPlants {
+public class EatBulbPlant extends FoodPlants implements ICharacteristic {
     private int bulbDepth;
 
     public int getBulbDepth() {return bulbDepth;}
@@ -18,5 +19,13 @@ public class EatBulbPlant extends FoodPlants {
     }
 
     //metody:
-    public String toString(){return getName()+ " " + getInsolationType() + " " + getSoilType() + " " + getSoilMoisture() + " " + getSoilPH() + " " + getBulbDepth();}
+    @Override
+    public String printString(){
+        return super.printString() + ", głębokość położenia bulwy: " + getBulbDepth() + "\n";
+    }
+
+    @Override
+    public void printCharacteristic() {
+        getBulbDepth();
+    }
 }

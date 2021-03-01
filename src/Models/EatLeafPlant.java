@@ -1,12 +1,13 @@
 package Models;
 
 import Abstract.FoodPlants;
+import Abstract.ICharacteristic;
 import Enumerators.InsolationType;
 import Enumerators.SoilMoisture;
 import Enumerators.SoilType;
 import Enumerators.Family;
 
-public class EatLeafPlant extends FoodPlants {
+public class EatLeafPlant extends FoodPlants implements ICharacteristic {
     private int vitaminPerGram;
 
     public int getVitaminPerGram() { return vitaminPerGram;}
@@ -19,5 +20,13 @@ public class EatLeafPlant extends FoodPlants {
     }
 
     //metody:
-    public String toString(){return getName()+ " " + getInsolationType() + " " + getSoilType() + " " + getSoilMoisture() + " " + getSoilPH() + " " + getVitaminPerGram();}
+    @Override
+    public String printString(){
+        return super.printString() + ", zawartość witamin: " + getVitaminPerGram() + "\n";
+    }
+
+    @Override
+    public void printCharacteristic(){
+    getVitaminPerGram();}
+
 }
