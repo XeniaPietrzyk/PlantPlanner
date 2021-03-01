@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>9</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>396</x>
+      <y>504</y>
+      <w>216</w>
+      <h>180</h>
+    </coordinates>
+    <panel_attributes>TaskPlants
+Package::Models
+--
+-antiInsects: List&lt;String&gt;
+-airPurification : List&lt;String&gt; 
+--
++getAntiInsects(): List&lt;String&gt;
+-setAntiInsects(List&lt;String&gt;): void
++getAirPurification(): List&lt;String&gt;
+-setAirPurification(List&lt;String&gt;): void
++addInsect()
++addPurification()
++printString()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>666</x>
+      <y>63</y>
+      <w>243</w>
+      <h>378</h>
+    </coordinates>
+    <panel_attributes>Abstract Class: MotherOfPlants
+Package::Abstract
+--
+-Id: int
+-nextId: int
+-name: String
+-insolation: InsolationType
+-soilType: SoilType
+-soilMoisture: SoilMoisture
+-soilPH: int
+--
++getId(): int
+-setId(int): void
++getNextId(): int
+-setNextId(int): void
++getName(): String
+-setName(String): void
++getInsolationType(): InsolationType
+-setInsolationType(InsolationType): void
++getSoilType(): SoilType
+-setSoilType(SoilType): void
++getSoilMoisture():SoilMoisture
+-setSoilMoisture(SoilMoisture): void
++getSoilPH(): int
+-setSoilPH(int): void
++toString(i: String): String
+/+printString()/
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>936</x>
+      <y>504</y>
+      <w>189</w>
+      <h>108</h>
+    </coordinates>
+    <panel_attributes>Abstract Class: FoodPlants
+Package::Abstract
+--
+-family: Family 
+--
++getFamily(): Family
+-setFamily(Family): void
++printString()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>630</x>
+      <y>504</y>
+      <w>288</w>
+      <h>108</h>
+    </coordinates>
+    <panel_attributes>DecorativePlants
+Package::Models
+--
+-decorativeElement: DecorativeElement
+--
++getDecorativeElement(): DecorativeElement
+-setDecorativeElement(DecorativeElement): void
++printString()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>747</x>
+      <y>432</y>
+      <w>27</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;80.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>801</x>
+      <y>432</y>
+      <w>189</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>190.0;80.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>531</x>
+      <y>432</y>
+      <w>198</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;80.0;200.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>972</x>
+      <y>648</y>
+      <w>207</w>
+      <h>108</h>
+    </coordinates>
+    <panel_attributes>EatFruitPlant 
+Package::Models
+--
+-flavanoidsContaining: int
+--
++getFlavanoidsContaining(): int
+-setFlavanoidsContaining(int): void
++printString()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>801</x>
+      <y>648</y>
+      <w>162</w>
+      <h>108</h>
+    </coordinates>
+    <panel_attributes>EatBulbPlant 
+Package::Models
+--
+-bulbDepth: int
+--
++getBulbDepth(): int
+-setBulbDepth(int): void
++printString()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1188</x>
+      <y>648</y>
+      <w>189</w>
+      <h>108</h>
+    </coordinates>
+    <panel_attributes>EatLeafPlant
+Package::Models
+--
+-vitaminPerGram: int
+--
++getVitaminPerGram: int
+-setVitaminPerGram(int): void
++printString()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>936</x>
+      <y>603</y>
+      <w>27</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;50.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1035</x>
+      <y>603</y>
+      <w>27</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;50.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1098</x>
+      <y>603</y>
+      <w>135</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>130.0;50.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>954</x>
+      <y>261</y>
+      <w>189</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>_ICharacteristic_
+Package::Abstract
+--
++printCharacteristic()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1035</x>
+      <y>315</y>
+      <w>27</w>
+      <h>207</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;210.0</additional_attributes>
+  </element>
+</diagram>
