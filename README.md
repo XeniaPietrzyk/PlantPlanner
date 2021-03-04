@@ -4,7 +4,7 @@ Student Project:
 - Java Console Application
 - includes: interface, abstract class, abstract methods, static fields, static methods
 
-You get 3 main categories(Task Plants, Decorative Plants, Food Plants) and 3 subcategories(Eat Bulb Plant, Eat Fruit Plant, Eat Leaf Plant) of plants.
+You get 3 main categories (Task Plants, Decorative Plants, Food Plants) and 3 subcategories (Eat Bulb Plant, Eat Fruit Plant, Eat Leaf Plant) of plants.
 
 Every of them has its own characteristic.
 
