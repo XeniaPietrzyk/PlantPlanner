@@ -1,4 +1,4 @@
-# PlantPlanner
+# BalconyPlantPlanner
 Student Project:
 
 - Java Console Application
